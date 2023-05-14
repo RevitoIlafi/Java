@@ -31,6 +31,7 @@ public class Basic{
         System.out.println(++b);
         System.out.println(b--);
         System.out.println(--b);
+        System.out.println("Hello");
         
     }
 }
