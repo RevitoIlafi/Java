@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class oddevent {
     public static void main(String[] args) {
         boolean exit = false;
+        Scanner sc = new Scanner(System.in);
         while(exit != true){
             int input;
-            String choice;
-            Scanner sc = new Scanner(System.in);
+            String choice;            
             System.out.println("Masukan angka : ");
             input = sc.nextInt();
             
@@ -21,12 +21,11 @@ public class oddevent {
                 // TODO: handle exception
                 System.out.println("The input is invalid");
             }
-        System.out.println("Do you want to exit? y/n");
-        sc = new Scanner(System.in);
-        choice = sc.nextLine();
-        if (choice == "y")
+        System.out.println("Do you want to exit? y/n");        
+        choice = sc.next();
+        if (choice.equals("y"))
             exit = true;
-            sc.close();
+            System.out.println("thank you and bye");
         }
     }
 }
