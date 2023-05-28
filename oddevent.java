@@ -23,9 +23,10 @@ public class oddevent {
             }
         System.out.println("Do you want to exit? y/n");        
         choice = sc.next();
-        if (choice.equals("y"))
+        if (choice.equals("y")){
             exit = true;
-            System.out.println("thank you and bye");
+            System.out.println("thank you and bye");}
+
         }
     }
 }
